@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filling for the first time</title>
+</head>
+<body>
+    <h1>Filling for the first time page</h1>
+    <p>You have selected to {{ optn_slct }}</p>
+    <form method="post" action="/test4">
+        <label for="data_mode">Please select an option:</label>
+        <select id="data_mode" name="optn_slct_mode">
+            <option value="manual_fill">Manually fill the form</option>
+            <option value="pdf_upload">Upload the resume as PDF file</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
